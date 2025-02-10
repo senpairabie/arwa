@@ -1,3 +1,27 @@
+
+
+/* ============MAIN CODE================= */
 :root{
-    --main-color:#ff1111;
+    --background: #ece7e2;
+    --main-color-A: #db903c;
+    --main-color-B: #1d202d;
+    --color: #90613a;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: var(--main-color-B);
+}
+body{
+    background-color: var(--background);
+}
+/* ============MAIN CODE================= */
+/* =========Start Header========= */
+/* =========Navigation========= */
+
+
+
