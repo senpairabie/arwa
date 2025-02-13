@@ -64,7 +64,8 @@ header ul li {
   color: var(--color);
 }
 
-.some {
+.some,
+.someB {
   background-color: var(--color);
   color: var(--background);
   font-size: 18px;
@@ -75,12 +76,24 @@ header ul li {
 
   transition: 0.4s;
 }
-.some:hover {
+.some:hover,
+.someB:hover {
   color: var(--color);
   background: none;
   margin-top: 10px;
 }
-
+.someB{
+  display: none;
+  width: 200px;
+  /* display: block; */
+  margin: 50px auto;  
+  text-align: center;
+}
+.someB:hover {
+  color: var(--color);
+  background: none;
+  margin-top: 48px;
+}
 /* =========heroo========= */
 .hero img {
   width: 600px;
@@ -135,4 +148,27 @@ h2 {
   font-weight: 900;
 
   font-family: var(--main-font);
+}
+
+
+@media (max-width: 992px){
+
+  .hero img {
+    width: 400px;
+    margin: 150px auto 0;
+
+  }
+
+  .hero h1 {
+    font-size: 80px;
+  }
+  .hero h2 {
+    font-size: 30px;
+  }
+  .some{
+    display: none;
+  }
+  .someB{
+    display: block;
+  }
 }
