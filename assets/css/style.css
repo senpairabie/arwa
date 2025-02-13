@@ -3,9 +3,10 @@
 /* ============MAIN CODE================= */
 :root {
   --background: #ece7e2;
-  --main-color-A: #db903c;
-  --main-color-B: #1d202d;
+  --main-color-A: #ffa947;
+  --main-color-B: #0b1336;
   --color: #63320a;
+  --colorB: #3f220963;
   --main-font: "El Messiri", serif;
 }
 * {
@@ -29,19 +30,61 @@ header {
 }
 /* =========Navigation========= */
 
-.navbar {
-  background-color: var(--color);
+header .container {
   justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 50px;
+  align-items: center;
 }
+
 .navbar-brand img {
   width: 80px;
   margin: 0;
 }
 
+header ul {
+  margin-right: 130px;
+}
+header ul li {
+  margin-right: 25px;
+  font-weight: 700px;
+}
+.nav-item a {
+  font-size: 18px;
+  font-weight: 700;
+  color: #c7977b;
+
+  transition: 0.4s;
+}
+.nav-item a:hover {
+  color: var(--color);
+}
+.nav-item .active {
+  color: var(--color);
+}
+
+.some {
+  background-color: var(--color);
+  color: var(--background);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 40px 5px;
+  border-radius: 25px;
+  border: solid 2px var(--color);
+
+  transition: 0.4s;
+}
+.some:hover {
+  color: var(--color);
+  background: none;
+  margin-top: 10px;
+}
+
 /* =========heroo========= */
 .hero img {
   width: 600px;
-  margin: 50px auto 0;
+  margin: 100px auto 0;
   display: block;
 }
 .hero h1,
@@ -58,4 +101,38 @@ h2 {
   font-size: 40px;
   font-weight: 600;
   margin-top: -20px;
+}
+
+/* =========Who We========= */
+.we {
+  background-image: linear-gradient(
+    155deg,
+    var(--background) 35%,
+    var(--main-color-B) 5%,
+    var(--main-color-B) 60%
+  );
+  border-radius: 5px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.we h1 {
+  width: 20%;
+  color: var(--main-color-B);
+  font-size: 60px;
+  text-align: center;
+  font-weight: 900;
+  margin: 30px 80px 0 100px;
+  font-family: var(--main-font);
+}
+.we .p {
+  margin: 0 20% 0 30%;
+  width: 60%;
+  padding: 100px 80px 40px;
+
+  color: var(--main-color-A);
+  font-size: 30px;
+  font-weight: 900;
+
+  font-family: var(--main-font);
 }
