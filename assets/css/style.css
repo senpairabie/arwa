@@ -2,9 +2,10 @@
 
 /* ============MAIN CODE================= */
 :root {
-  --background: #ece7e2;
+  --background: #e9e3dd;
   --main-color-A: #ffa947;
   --main-color-B: #0b1336;
+  --navIcon: #c7977b;
   --color: #63320a;
   --colorB: #3f220963;
   --main-font: "El Messiri", serif;
@@ -13,6 +14,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+ul {
+  display: flex;
+  margin: 15px;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  margin-right: 30px;
+  text-decoration: none;
+  color: var(--background);
+  font-size: 18px;
+  font-weight: 700;
+
+  transition: 0.35s;
+}
+ul li a:hover {
+  color: var(--main-color-A);
 }
 a {
   text-decoration: none;
@@ -37,68 +57,25 @@ header .container {
   padding: 5px 50px;
   align-items: center;
 }
+nav {
+  background-image: linear-gradient(to bottom, var(--color) 60%, #241101);
+  border-bottom: dashed #e4d4c3 1.5px;
+}
 
 .navbar-brand img {
-  width: 80px;
+  width: 120px;
   margin: 0;
 }
-
-header ul {
-  margin-right: 130px;
-}
-header ul li {
-  margin-right: 25px;
-  font-weight: 700px;
-}
-.nav-item a {
-  font-size: 18px;
-  font-weight: 700;
-  color: #c7977b;
-
-  transition: 0.4s;
-}
-.nav-item a:hover {
-  color: var(--color);
-}
-.nav-item .active {
-  color: var(--color);
-}
-
-.some,
-.someB {
-  background-color: var(--color);
-  color: var(--background);
-  font-size: 18px;
-  font-weight: 600;
-  padding: 10px 40px 5px;
-  border-radius: 25px;
-  border: solid 2px var(--color);
-
-  transition: 0.4s;
-}
-.some:hover,
-.someB:hover {
-  color: var(--color);
-  background: none;
-  margin-top: 10px;
-}
-.someB {
-  display: none;
-  width: 200px;
-  /* display: block; */
-  margin: 50px auto;
-  text-align: center;
-}
-.someB:hover {
-  color: var(--color);
-  background: none;
-  margin-top: 48px;
-}
 /* =========heroo========= */
+.hero {
+  width: 100%;
+  padding: 100px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .hero img {
-  width: 600px;
-  margin: 100px auto 0;
-  display: block;
+  width: 400px;
 }
 .hero h1,
 h2 {
@@ -115,33 +92,50 @@ h2 {
   font-weight: 600;
   margin-top: -20px;
 }
+.hero p {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 140px;
+}
+
+.some {
+  background-image: linear-gradient(to bottom, var(--color) 60%, #241101);
+  color: var(--background);
+  width: 200px;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 50px 140px;
+  padding: 10px 40px 5px;
+  border-radius: 25px;
+  border: solid 2px var(--color);
+  border-bottom: #241101;
+  display: block;
+  text-align: center;
+
+  transition: 0.6s;
+}
+.some:hover {
+  color: var(--color);
+  background: none;
+}
 
 /* =========Who We========= */
 .we {
-  background-image: linear-gradient(
-    155deg,
-    var(--background) 35%,
-    var(--main-color-B) 5%,
-    var(--main-color-B) 60%
-  );
-  border-radius: 5px;
+  background-color: #63320a;
+  border-radius: 40px 40px 0 0;
   width: 100%;
-  align-items: center;
-  justify-content: space-between;
+  text-align: center;
 }
 .we h1 {
-  width: 20%;
-  color: var(--main-color-B);
+  padding-top: 80px;
+  color: var(--main-color-A);
   font-size: 60px;
   text-align: center;
   font-weight: 900;
-  margin: 30px 80px 0 100px;
   font-family: var(--main-font);
 }
 .we .p {
-  margin: 0 20% 0 30%;
-  width: 60%;
-  padding: 100px 80px 40px;
+  padding: 100px 140px;
 
   color: var(--background);
   font-size: 30px;
@@ -151,45 +145,7 @@ h2 {
 }
 
 @media (max-width: 992px) {
-  .hero img {
-    width: 400px;
-    margin: 150px auto 0;
-  }
-
-  .hero h1 {
-    font-size: 80px;
-  }
-  .hero h2 {
-    font-size: 30px;
-  }
-  .some {
-    display: none;
-  }
-  .someB {
-    display: block;
-  }
 }
 
 @media (max-width: 720px) {
-  header {
-    height: 600px;
-    margin-bottom: 200px;
-  }
-  .navbar-brand img {
-    width: 120px;
-  }
-
-  .we {
-    display: flex;
-  }
-  .we h1 {
-    color: #ece7e2;
-    margin-bottom: 20px;
-    font-family: var(--main-font);
-  }
-  .we .p {
-    margin: 320px 10px 0;
-    padding: 0 0 40px;
-    font-size: 30px;
-  }
 }
