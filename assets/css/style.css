@@ -23,8 +23,8 @@ ul li {
   list-style: none;
 }
 ul li a {
-  width: 100px;
-  margin-right: 50px;
+  width: 120px;
+  margin-right: 40px;
   text-decoration: none;
   color: var(--background);
   font-size: 25px;
@@ -58,24 +58,27 @@ header .container {
   align-items: center;
 }
 nav {
+  width: 100%;
+  position: fixed;
   background-image: linear-gradient(to bottom, var(--color) 60%, #241101);
   border-bottom: dashed #e4d4c3 1.5px;
+  justify-content: space-between;
 }
 
 .navbar-brand img {
-  width: 120px;
+  width: 130px;
   margin: 0;
 }
 /* =========heroo========= */
 .hero {
   width: 100%;
-  padding: 150px 100px;
+  padding: 250px 100px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .hero img {
-  width: 400px;
+  max-width: 400px;
 }
 .hero h1,
 h2 {
@@ -134,8 +137,8 @@ h2 {
   font-family: var(--main-font);
 }
 .we .p {
-  padding: 40px 140px 110px;
-
+  padding: 40px 20px 110px;
+  
   color: var(--background);
   font-size: 30px;
   font-weight: 900;
@@ -187,20 +190,20 @@ h2 {
   font-size: 35px;
 }
 
-@media (max-width: 720px) {
-  .hero h2 {
-    font-size: 25px;
-  }
-  .hero p {
-    font-size: 18px;
-  }
-  .ourVision .ourP {
-    font-size: 18px;
-  }
-}
 @media (max-width: 992px) {
-  header {
+  /* header {
     height: 600px;
+  }
+  .nav {
+    display: none;
+  }
+  .navbar-brand {
+    width: 100%;
+  } */
+  .navbar-brand img {
+    display: block;
+    width: 180px;
+    margin: 20px auto;
   }
   .hero img {
     width: 300px;
@@ -211,6 +214,15 @@ h2 {
   .hero p {
     font-size: 20px;
   }
+  .some {
+    width: 300px;
+    font-size: 25px;
+    padding: 25px 40px 20px;
+    border-radius: 50px;
+
+  }
+
+
   ul li a {
     margin-right: 30px;
     font-size: 20px;
