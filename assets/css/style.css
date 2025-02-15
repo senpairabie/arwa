@@ -41,16 +41,25 @@ a {
 body {
   background-color: var(--background);
 }
+h1 {
+  padding-top: 80px;
+  color: var(--main-color-A);
+  font-size: 60px;
+  text-align: center;
+  font-weight: 900;
+  font-family: var(--main-font);
+}
 
-/* ============MAIN CODE================= */
+/* =======END MAIN CODE========== */
+/* ============================== */
 /* =========Start Header========= */
 header {
   width: 100%;
   height: 700px;
   font-family: var(--main-font);
 }
+/* =============================== */
 /* =========Navigation========= */
-
 header .container {
   display: flex;
   justify-content: space-between;
@@ -64,12 +73,14 @@ nav {
   border-bottom: dashed #e4d4c3 1.5px;
   justify-content: space-between;
 }
-
 .navbar-brand img {
   width: 130px;
   margin: 0;
 }
-/* =========heroo========= */
+
+/* ========END Navigation========= */
+/* =============================== */
+/* ==========Start Heroo========== */
 .hero {
   width: 100%;
   padding: 250px 100px;
@@ -80,15 +91,15 @@ nav {
 .hero img {
   max-width: 400px;
 }
-.hero h1,
+.hero h3,
 h2 {
   text-align: center;
   color: var(--color);
   font-family: var(--main-font);
 }
-.hero h1 {
+.hero h3 {
   font-size: 90px;
-  font-weight: bolder;
+  font-weight: 900;
 }
 .hero h2 {
   font-size: 40px;
@@ -99,7 +110,7 @@ h2 {
   font-weight: 600;
   margin: 20px 140px;
 }
-
+/* ================منتجاتنا================ */
 .some {
   background-image: linear-gradient(to bottom, var(--color) 60%, #241101);
   color: var(--background);
@@ -120,33 +131,27 @@ h2 {
   color: var(--color);
   background: none;
 }
-
-/* =========Who We========= */
+/* =======Ended Heroo======= */
+/* ========================= */
+/* =========Who We========== */
 .we {
   background-color: #63320a;
   border-radius: 40px 40px 0 0;
   width: 100%;
   text-align: center;
 }
-.we h1 {
-  padding-top: 80px;
-  color: var(--main-color-A);
-  font-size: 60px;
-  text-align: center;
-  font-weight: 900;
-  font-family: var(--main-font);
-}
 .we .p {
-  padding: 40px 20px 110px;
-  
+  padding: 40px 70px 120px;
+  line-height: 2.5;
+  word-spacing: 25px;
   color: var(--background);
   font-size: 30px;
   font-weight: 900;
-
   font-family: var(--main-font);
 }
-
-/* our vision */
+/* =======Who We ended======= */
+/* ========================== */
+/* ========our vision======== */
 .ourVision {
   margin-top: -50px;
   background-color: var(--background);
@@ -154,17 +159,9 @@ h2 {
   width: 100%;
   text-align: center;
 }
-.ourVision h1 {
-  padding-top: 80px;
-  color: var(--main-color-A);
-  font-size: 60px;
-  text-align: center;
-  font-weight: 900;
-  font-family: var(--main-font);
-}
 .ourVision .ourP {
-  width: 80%;
-  padding: 40px 200px 100px 0;
+  width: 100%;
+  padding: 40px 70px 50px;
   text-align: right;
   color: var(--color);
   font-size: 30px;
@@ -173,8 +170,50 @@ h2 {
   font-family: var(--main-font);
 }
 .ourP p {
-  margin: 0 auto;
+  padding: 40px 0px 110px;
+  line-height: 1.5;
+  word-spacing: 15px;
 }
+/* =========end vision========== */
+/* ============================= */
+/* ======partner & clients====== */
+.partner,
+.clients {
+  background-color: #0b13364d;
+  border-radius: 50px 50px 0 0;
+}
+.clients {
+  margin-top: 40px;
+}
+.partner h1,
+.clients h1 {
+  color: var(--main-color-B);
+}
+.partner .logos,
+.clients .logos {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+}
+.partner .logos img,
+.clients .logos img {
+  width: 180px;
+}
+/* =====End partner&clients===== */
+/* ============================= */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================= */
 /* ===========icons============= */
 .icons {
   text-align: center;
@@ -219,13 +258,11 @@ h2 {
     font-size: 25px;
     padding: 25px 40px 20px;
     border-radius: 50px;
-
   }
 
-
   ul li a {
-    margin-right: 30px;
-    font-size: 20px;
+    margin-left: 25px;
+    font-size: 22px;
   }
   .ourVision .ourP {
     font-size: 20px;
